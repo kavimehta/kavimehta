@@ -14,13 +14,12 @@ app.use(bodyParser.urlencoded({ extended: false}));
 // Angular DIST output folder
 app.use(express.static(path.join(__dirname, 'dist')));
 
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+app.use('/', express.static(path.join(__dirname, 'dist/kavimehta')));
+
 // API location
 app.use('/api', api);
-
-// Send all other requests to the Angular app
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'dist/kavimehta/index.html'));
-});
 
 //Set Port
 const port = process.env.PORT || '3000';
