@@ -5,9 +5,9 @@ const ObjectID = require('mongodb').ObjectID;
 
 // Connect
 const connection = (closure) => {
-    return MongoClient.connect('mongodb://admin:admin1@ds133262.mlab.com:33262/personal_website', (err, db) => {
+    return MongoClient.connect('mongodb://admin:admin1@ds133262.mlab.com:33262/personal_website', { useNewUrlParser: true }, (err, client) => {
         if (err) return console.log(err);
-
+        const db = client.db('personal_website');
         closure(db);
     });
 };
