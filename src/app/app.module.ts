@@ -11,7 +11,11 @@ import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { BooksComponent } from './books/books.component';
 
-const appRoutes: Routes = [];
+const appRoutes: Routes = [
+  { path: 'about', component: AboutComponent },
+  { path: 'projects', component: ProjectsComponent },
+  { path: 'books', component: BooksComponent }
+];
 
 @NgModule({
   declarations: [
