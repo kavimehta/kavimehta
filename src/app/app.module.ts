@@ -7,13 +7,19 @@ import { HttpModule } from '@angular/http';
 import { DataService } from '../common/services/data/data.service';
 import { AppHeaderComponent } from '../common/components/app-header/app-header.component';
 import { RouterModule, Routes } from '@angular/router';
+import { AboutComponent } from './about/about.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { BooksComponent } from './books/books.component';
 
 const appRoutes: Routes = [];
 
 @NgModule({
   declarations: [
     AppComponent,
-    AppHeaderComponent
+    AppHeaderComponent,
+    AboutComponent,
+    ProjectsComponent,
+    BooksComponent
   ],
   imports: [
     BrowserModule,
