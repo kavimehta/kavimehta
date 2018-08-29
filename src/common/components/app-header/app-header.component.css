@@ -8,16 +8,29 @@ ul {
 
 li {
     float: left;
+    display: block;
+    text-align:center;
 }
 
 li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
+    height: 100%;
+    padding: 15px;
 }
 
 li a:hover {
-    background-color: #111;
+    background-color: rgb(70, 70, 70);
+}
+
+li.icon {
+    float: right;
+}
+
+img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
 }
