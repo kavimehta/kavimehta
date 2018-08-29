@@ -21,6 +21,9 @@ app.use('/', express.static(path.join(__dirname, 'dist/kavimehta')));
 // API location
 app.use('/api', api);
 
+// Send all other requests to the Angular app
+app.use('*', express.static(path.join(__dirname, 'dist/kavimehta')));
+
 //Set Port
 const port = process.env.PORT || '3000';
 app.set('port', port);

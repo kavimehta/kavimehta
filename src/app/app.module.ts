@@ -14,7 +14,8 @@ import { BooksComponent } from './books/books.component';
 const appRoutes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'projects', component: ProjectsComponent },
-  { path: 'books', component: BooksComponent }
+  { path: 'books', component: BooksComponent },
+  { path: '**', redirectTo: ''}
 ];
 
 @NgModule({
