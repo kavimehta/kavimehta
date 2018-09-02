@@ -1,16 +1,18 @@
 <app-header></app-header>
-<h2>Here's a list of the database users: </h2>
-<ul>
-  <li *ngFor="let user of users">{{ user.name }}</li>
-</ul>
 <div>
   <h1 class="name">
     Kavi Mehta
   </h1>
 </div>
-<nav>
-  <a routerLink="/about" routerLinkActive="active">About Me</a>
-  <a routerLink="/projects" routerLinkActive="active">Projects</a>
-  <a routerLink="/books" routerLinkActive="active">Books</a>
-</nav>
+<div class="flex-container">
+  <div class="box" routerLink="/about" routerLinkActive="active">
+      About Me
+  </div>
+  <div class="box" routerLink="/projects" routerLinkActive="active">
+      Projects
+  </div>
+  <div class="box" routerLink="/books" routerLinkActive="active">
+      Books
+  </div>
+</div>
 <router-outlet></router-outlet>

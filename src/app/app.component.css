@@ -1,0 +1,16 @@
+.box {
+    margin-top: 15px;
+    right: 50px;
+    margin-bottom: 15px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.flex-container {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
