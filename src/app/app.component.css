@@ -6,6 +6,14 @@
     text-align: center;
 }
 
+.box:hover {
+    background-color: #d8c3a5;
+}
+
+.box:focus {
+    outline:0;
+}
+
 .flex-container {
     height: 100%;
     width: 100%;
